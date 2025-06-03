@@ -10,7 +10,7 @@ pub fn build(builder: *std.Build) !void {
         .root_source_file = builder.path("src/root.zig"),
         .link_libcpp = true,
         .link_libc = true,
-        .sanitize_c = false,
+        .sanitize_c = .off,
     });
 
     const c_interface = builder.addTranslateC(.{
@@ -95,8 +95,6 @@ pub fn build(builder: *std.Build) !void {
         .target = target,
         .optimize = optimize,
     });
-
-    lib_unit_tests.is_linking_libc = true;
 
     const run_lib_unit_tests = builder.addRunArtifact(lib_unit_tests);
 
