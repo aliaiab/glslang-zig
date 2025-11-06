@@ -92,8 +92,6 @@ pub fn build(builder: *std.Build) !void {
 
     const lib_unit_tests = builder.addTest(.{
         .root_module = glslang_module,
-        .target = target,
-        .optimize = optimize,
     });
 
     const run_lib_unit_tests = builder.addRunArtifact(lib_unit_tests);
