@@ -2,11 +2,11 @@
     .name = .glslang_zig,
     .fingerprint = 0xe15c80c4f706f57,
     .version = "0.0.0",
-    .minimum_zig_version = "0.15.2",
+    .minimum_zig_version = "0.16.0",
     .dependencies = .{
         .glslang = .{
             .url = "https://github.com/KhronosGroup/glslang/archive/30661abd9c3e97144f79cb30f2fb5a0da2c7b93c.tar.gz",
-            .hash = "12200da24e9f16994df0c70d8d15108c5cc8f3d0fc8619f579e1b128333dec568e09",
+            .hash = "N-V-__8AANM4TwINok6fFplN8McNjRUQjFzI89D8hhn1eeGx",
         },
     },
     .paths = .{
